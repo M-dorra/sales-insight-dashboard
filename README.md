@@ -52,6 +52,19 @@ A star schema model was built in Power BI:
 
 ---
 
+## 🧹 Data Cleaning & Transformation
+
+Before visualizing the data in Power BI, several data preparation steps were performed to ensure accuracy and consistency:
+
+- ✅ **Removed duplicate rows** from the `transactions` table
+- ✅ **Normalized currency values**:
+  - Sales amounts were recorded in both **USD** and **INR**
+  - A new column was added to **convert all values to INR** using consistent exchange rates
+- ✅ **Filtered out invalid records**:
+  - Removed rows where `sales_amount` was negative or null
+
+
+---
 ## 📊 Dashboard Features
 
 ### 📌 Key Measures:
@@ -95,6 +108,3 @@ This dashboard enables users to:
 
 ---
 
-## 📂 License
-
-This project is for educational and portfolio use only. Please do not use the underlying data for commercial purposes.
